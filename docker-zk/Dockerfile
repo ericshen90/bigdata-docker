@@ -1,4 +1,4 @@
-FROM tonywell/centos-java
+FROM centos-java
 
 RUN wget http://apache.fayea.com/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz && \
       tar -zvxf zookeeper-3.4.6.tar.gz -C /opt/ && \

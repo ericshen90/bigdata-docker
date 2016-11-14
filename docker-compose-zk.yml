@@ -1,5 +1,5 @@
 zoo1:
-   image: tonywell/docker-zk
+   image: docker-zk
    restart: always
    net: zoo
    container_name: zk1
@@ -12,7 +12,7 @@ zoo1:
       - "2888"
       - "3888"
 zoo2:
-   image: tonywell/docker-zk
+   image: docker-zk
    restart: always
    net: zoo
    container_name: zk2
@@ -25,7 +25,7 @@ zoo2:
       - "2888"
       - "3888"
 zoo3:
-   image: tonywell/docker-zk
+   image: docker-zk
    restart: always
    container_name: zk3
    net: zoo
@@ -38,7 +38,7 @@ zoo3:
       - "2888"
       - "3888"
 zoo4:
-   image: tonywell/docker-zk
+   image: docker-zk
    restart: always
    container_name: zk4
    net: zoo
@@ -51,7 +51,7 @@ zoo4:
       - "2888"
       - "3888"
 zoo5:
-   image: tonywell/docker-zk
+   image: docker-zk
    restart: always
    container_name: zk5
    net: zoo

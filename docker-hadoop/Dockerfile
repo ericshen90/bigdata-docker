@@ -1,4 +1,4 @@
-FROM tonywell/centos-java
+FROM centos-java
 MAINTAINER tonywell
 
 RUN yum -y install which && yum clean all

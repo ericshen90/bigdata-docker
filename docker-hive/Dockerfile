@@ -1,10 +1,10 @@
-FROM tonywell/docker-hadoop
+FROM docker-hadoop
 
 MAINTAINER tonywell <tongwei1985@gmail.com>
 
 ENV HIVE_HOME=/usr/local/hive
 
-RUN wget http://mirror.bit.edu.cn/apache/hive/hive-1.2.1/apache-hive-1.2.1-bin.tar.gz && \
+RUN wget http://apache.fayea.com/hive/hive-1.2.1/apache-hive-1.2.1-bin.tar.gz && \
      tar -zvxf apache-hive-1.2.1-bin.tar.gz -C /usr/local/ && \
      mv /usr/local/apache-hive-1.2.1-bin /usr/local/hive && \
      rm apache-hive-1.2.1-bin.tar.gz

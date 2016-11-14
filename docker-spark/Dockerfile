@@ -1,4 +1,4 @@
-FROM tonywell/docker-hive
+FROM docker-hive
 
 MAINTAINER tonywell <tongwei1985@gmail.com>
 

@@ -1,4 +1,4 @@
-FROM tonywell/docker-spark
+FROM docker-spark
 
 MAINTAINER tonywell <tongwei1985@gmail.com>
 

@@ -1,26 +1,26 @@
 hadoop-slave1:
-   image: tonywell/docker-hive
+   image: docker-hive
    container_name: hadoop-slave1
    volumes:
      - ./docker-hadoop/conf:/usr/local/hadoop/etc/hadoop
      - ./docker-hive/conf:/usr/local/hive/conf
    net: zoo
 hadoop-slave2:
-   image: tonywell/docker-hive
+   image: docker-hive
    container_name: hadoop-slave2
    volumes:
      - ./docker-hadoop/conf:/usr/local/hadoop/etc/hadoop
      - ./docker-hive/conf:/usr/local/hive/conf
    net: zoo
 hadoop-slave3:
-   image: tonywell/docker-hive
+   image: docker-hive
    container_name: hadoop-slave3
    volumes:
      - ./docker-hadoop/conf:/usr/local/hadoop/etc/hadoop
      - ./docker-hive/conf:/usr/local/hive/conf
    net: zoo
 hadoop-master:
-   image: tonywell/docker-hive
+   image: docker-hive
    container_name: hadoop-master
    volumes:
      - ./docker-hadoop/conf:/usr/local/hadoop/etc/hadoop

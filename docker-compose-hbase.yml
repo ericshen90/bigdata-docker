@@ -1,5 +1,5 @@
 hadoop-slave1:
-   image: tonywell/docker-hbase
+   image: docker-hbase
    container_name: hadoop-slave1
    volumes:
      - ./docker-hadoop/conf:/usr/local/hadoop/etc/hadoop
@@ -8,7 +8,7 @@ hadoop-slave1:
      - ./docker-hbase/conf:/usr/local/hbase/conf
    net: zoo
 hadoop-slave2:
-   image: tonywell/docker-hbase
+   image: docker-hbase
    container_name: hadoop-slave2
    volumes:
      - ./docker-hadoop/conf:/usr/local/hadoop/etc/hadoop
@@ -17,7 +17,7 @@ hadoop-slave2:
      - ./docker-hbase/conf:/usr/local/hbase/conf
    net: zoo
 hadoop-slave3:
-   image: tonywell/docker-hbase
+   image: docker-hbase
    container_name: hadoop-slave3
    volumes:
      - ./docker-hadoop/conf:/usr/local/hadoop/etc/hadoop
@@ -26,7 +26,7 @@ hadoop-slave3:
      - ./docker-hbase/conf:/usr/local/hbase/conf
    net: zoo
 hadoop-master:
-   image: tonywell/docker-hbase
+   image: docker-hbase
    container_name: hadoop-master
    volumes:
      - ./docker-hadoop/conf:/usr/local/hadoop/etc/hadoop
